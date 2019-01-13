@@ -20,7 +20,7 @@ inits <- function(){
 }
 parameters <- c("theta", "mu.theta", "sigma.theta")
 ## You may need to edit "bugs.directory", the directory where WinBUGS was installed
-my.bugs.directory="/Users/sooahn/Downloads/WinBUGS14/"
+my.bugs.directory="/Users/sooahn/Downloads/winbugs14_full_patched/WinBUGS14/"
 schools.sim <- bugs(data, inits, parameters, model.file,
                     n.chains=3, n.iter=5000,
                     bugs.directory=my.bugs.directory, useWINE=T, debug=T)
